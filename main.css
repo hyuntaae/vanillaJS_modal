@@ -1,0 +1,108 @@
+/* Web font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Button */
+
+.modal-btn {
+    border: none;
+    border-radius: 8px;
+    padding: 13px 32px;
+    background-color: #0066ff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+/* Modal */
+
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.modal-content {
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 22px;
+    color: #bbb;
+    font-weight: 700;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.modal-content img {
+    width: 220px;
+}
+
+.modal-content p {
+    margin: 20px 0;
+}
+
+.guide-btn {
+    display: block;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #0066ff;
+    color: #fff;
+}
+
+/* js add class */
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
