@@ -70,5 +70,23 @@ document.querySelector('.modal').addEventListener('click', function(e){
 })
 
 
+/*
+
+******  추가  ******
+
+- 이벤트 관련 함수중에 e.currentTarget 이란것도 있다.
+  e.target 은 실제 이벤트가 발생한 요소를 알려준다면 e.currentTarget 은 이벤트리스너를 가진 요소를 알려준다.
+- 위 상황에서 나는 이벤트 리스너가 달린 modal에만 이벤트를 발생시키고 싶으므로 
+  현재 이벤트가 발생한 요소 == 이벤트리스너가 달린 요소 // e.target == e.currentTarget 이렇게 써도 된다.
+
+
+document.querySelector('.modal').addEventListener('click', function(e){
+    if(e.target == e.currentTarget) {
+        document.querySelector('.modal').classList.remove('show')
+    }
+})
+
+*/
+
 
 
